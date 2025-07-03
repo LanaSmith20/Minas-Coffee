@@ -27,24 +27,39 @@
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <i class="fa-solid fa-mug-saucer"></i>
-          <a class="navbar-brand" href="#">Minas<br> Coffee</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="#"
+            >Minas<br />
+            Coffee</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">shop</a>
+                <a class="nav-link" href="#cart">shop</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " aria-disabled="true">Delivery</a>
+                <a class="nav-link" href="#footer_left">Delivery</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search"/>
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+              />
               <i class="fa-solid fa-magnifying-glass"></i>
             </form>
             <i class="fa-solid fa-cart-shopping"></i>
@@ -57,10 +72,10 @@
       <div class="intro_left">
         <h1>Welcome to the<br />Minas Coffee</h1>
         <h6>Brazilian coffee sice 1950</h6>
-        <button class="button">Shop now</button>
+        <a href="./aboutus.html" target="_blank" id="about-us"> About us</a>
       </div>
       <div class="intro_right">
-        <img src="image/photo-3.jpeg"  />
+        <img src="image/photo-3.jpeg" />
       </div>
     </section>
     <main class="main_container">
@@ -71,22 +86,26 @@
       <section class="menu_coffee">
         <div class="menu_img">
           <img src="image/photo-1.jpeg" alt="cafe" width="200" />
-          <p class="img_desc">Coffee Choc</p>
+          <p class="img_desc">Coffee Choc <br> add to cart</p>
+        
         </div>
 
         <div class="menu_img">
           <img src="image/photo-2.jpeg" alt="cafe" width="200" />
-          <p class="img_desc">Expresso</p>
+          <p class="img_desc">Expresso <br> add to cart</p>
+          
         </div>
 
         <div class="menu_img">
           <img src="image/photo-3.jpeg" alt="cafe" width="200" />
-          <p class="img_desc">Coffee Cream</p>
+          <p class="img_desc">Coffee Cream <br> add to cart</p>
+       
         </div>
 
         <div class="menu_img">
           <img src="image/photo-4.jpeg" alt="cafe" width="200" />
-          <p class="img_desc">Coffee extra Expresso</p>
+          <p class="img_desc">Coffee extra Expresso<br> add to cart</p>
+         
         </div>
       </section>
       <div class="menu_div">
@@ -96,22 +115,27 @@
       <section class="menu_coffee">
         <div class="menu_img">
           <img src="image/photo-9.jpeg" alt="cake" width="200" />
-          <p class="img_desc">Choc Cake</p>
+          <p class="img_desc">Choc Cake<br> add to cart</p> 
+         
+        
         </div>
 
         <div class="menu_img">
           <img src="image/photo-10.jpeg" alt="cake" width="200" />
-          <p class="img_desc">Coffee Cake</p>
+          <p class="img_desc">Coffee Cake<br> add to cart</p>
+          
         </div>
 
         <div class="menu_img">
           <img src="image/photo-5.jpeg" alt="cake" width="200" />
-          <p class="img_desc">Cream Choc</p>
+          <p class="img_desc">Cream Choc<br> add to cart</p>
+         
         </div>
 
         <div class="menu_img">
           <img src="image/photo-12.jpeg" alt="cake" width="200" />
-          <p class="img_desc">Toffee Coffee</p>
+          <p class="img_desc">Toffee Coffee<br> add to cart</p>
+          
         </div>
       </section>
     </main>
@@ -147,27 +171,37 @@
         <i class="fa-solid fa-star"></i>
       </div>
     </section>
-    <footer class="flex_footer">
-      <div class="footer_address">
-        <h2>Address</h2>
+    <footer class="footer">
+      <div class="footer_left" id="footer_left"></a>
+        <h1>Address</h1>
         <p>
-          4140 Parker Rd. Allentown,<br />
-          New Mexico 31134
-        </p>
-      </div>
-      <div class="footer_address">
-        <h2>Contact</h2>
-        <p><i class="fa-solid fa-phone"></i>(480) 555-0103</p>
-      </div>
-
-      <div class="footer_address">
-        <h2>Follow us</h2>
-       
+          Rua das aroeiras 192 <br />
+          35-3453409
+          <br />
+          Social Media<br />
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-pinterest"></i>
-        </div>
+        </p>
       </div>
+      <form class="footer_form">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+        <textarea 
+          name="message"
+          id="message"
+      
+          placeholder="Message"
+     
+        ></textarea>
+        <button type="submit" id="btn">Submit</button>
+      </form>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

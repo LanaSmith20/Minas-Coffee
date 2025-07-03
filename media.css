@@ -28,10 +28,7 @@
   .main_container {
     width: 90%;
   }
-  .menu_coffee {
-    display: grid;
-    grid-template-columns: auto auto;
-  }
+ 
 }
 /* Responsive Design for mobile*/
 @media (max-width: 390px) {
