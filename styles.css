@@ -84,6 +84,11 @@ i {
   border-radius: 100%;
   animation: flutuar 5s ease-in-out;
 }
+ 
+.cart-items{
+  display: flex;
+  align-items: center;
+}
 
 /*button*/
 #about-us{
@@ -132,24 +137,23 @@ i {
   margin-bottom: 32px;
 }
 
-.img_desc {
+.menu-title {
   color: var(--Darkblue);
   background-color: #2c2c2d52;
   padding: 8px;
   transition: 0.1s ease-out;
   border-radius: 0  0 8px 8px;;
 }
-.img_desc:hover {
-  background-color: var(--Darkgray);
-  color: var(--ColorWhite);
-}
 
-.cart{
-
-  
+.add-button{
   color: var(--Darkblue);
   background-color: #2c2c2d52;
-  border-radius: 0 0 8px 8px;
+  border: none;
+  padding: 8px;
+  border-radius: 50px;
+}
+.add-button:hover{
+  color: var(--ColorWhite);
 }
 .Feedback {
   display: flex;
@@ -183,6 +187,7 @@ background-color: var(--Darkgray) ;
   border-radius: 8px;
   border: none;
   padding: 8px;
+  outline: none;
 
  
  }
@@ -193,7 +198,12 @@ background-color: var(--Darkgray) ;
   padding: 16px;
   color: var(--ColorWhite);
 }
- 
+ .footer_left h1{
+  font-size: 16px;
+ }
+ .footer_left p{
+  font-size: 12px;
+ }
 .footer_form{
   display: flex;
   flex-direction: column;
@@ -205,11 +215,14 @@ background-color: var(--Darkgray) ;
 
 }
 #btn{
+  margin: auto;
+  font-size: 12px;
+  width: 50%;
   border-radius: 8px;
   border: none;
   background-color: var(--Darkblue);
   color: var(--ColorWhite);
-  padding: 8px;
+  padding: 6px;
 }
 ::placeholder
 {
