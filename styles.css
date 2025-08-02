@@ -13,7 +13,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html{
+  overflow-x: hidden;
+}
 /*styling body*/
 body {
   font-family: Arial, sans-serif;
@@ -21,30 +23,30 @@ body {
 }
 /*styling the menu bar position */
 header {
-  position: fixed;
+
   width: 100%;
 }
 
 .navbar-brand {
   font-size: 1.5em;
-  padding-left: 1.25em;
+
 }
 i {
-  padding: 1em;
+
 }
 .nav-item {
   font-size: 1.35em;
-  padding-left: 1.5em;
+
 }
 /*styling navigation link*/
 .nav-links {
   list-style-type: none;
   display: flex;
-  margin-left: 1.875em;
+
 }
 
 .nav-links li {
-  margin-left: 1.25em;
+
 }
 
 .nav-links a {
@@ -62,27 +64,27 @@ i {
 .intro {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 170px;
+
 }
 .intro_left h1 {
   font-family: "Urbanist", sans-serif;
   font-size: 4em;
   text-align-last: center;
   color: var(--Darkgray);
-  padding-top: 50px;
+
 }
 .intro_left h6 {
   font-size: 15px;
   text-align-last: center;
   color: var(--ColorWhite);
-  margin-top: 32px;
+
 }
 
 .intro_right img {
-  position: static;
+
   width: 400px;
   border-radius: 100%;
-  animation: flutuar 5s ease-in-out;
+
 }
  
 .cart-items{
@@ -155,16 +157,15 @@ i {
 .add-button:hover{
   color: var(--ColorWhite);
 }
-.Feedback {
+.feedback {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
+  flex-wrap: wrap;
   gap: 8px;
-  padding: 32px;
-  margin-top: 32px;
 }
-.Feedback img {
+.feedback img {
   border-radius: 100px;
 }
 .feed_text {
@@ -178,7 +179,6 @@ i {
 .footer{
 display: flex;
 justify-content:center;
-gap: 150px;
 align-items:center;
 background-color: var(--Darkgray) ;
 
@@ -227,15 +227,5 @@ background-color: var(--Darkgray) ;
 ::placeholder
 {
   color: rgba(128, 128, 128, 0.614);
-}
-
-@keyframes flutuar {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
 }
 

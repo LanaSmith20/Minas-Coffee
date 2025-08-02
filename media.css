@@ -1,7 +1,9 @@
 /* Responsive Design for tablet */
 @media (max-width: 768px) {
   .intro_right img {
-    width: 300px;
+    width: 0px;
+    height:0;
+    visibility: hidden;
   }
   .intro {
     justify-content: space-evenly;
