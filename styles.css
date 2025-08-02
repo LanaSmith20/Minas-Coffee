@@ -45,9 +45,6 @@ i {
 
 }
 
-.nav-links li {
-
-}
 
 .nav-links a {
   color: var(--Darkgray);
@@ -63,7 +60,9 @@ i {
 /* styling intro right and left*/
 .intro {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+
 
 }
 .intro_left h1 {
