@@ -31,8 +31,11 @@ header {
   font-size: 1.5em;
 
 }
-i {
+d-flex{
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .nav-item {
   font-size: 1.35em;
@@ -62,8 +65,7 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-
-
+  gap: 8px;
 }
 .intro_left h1 {
   font-family: "Urbanist", sans-serif;
@@ -80,9 +82,9 @@ i {
 }
 
 .intro_right img {
-
-  width: 400px;
+  width: 300px;
   border-radius: 100%;
+  
 
 }
  
@@ -158,27 +160,27 @@ i {
 }
 .feedback {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  flex-wrap: wrap;
-  gap: 8px;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px;
 }
 .feedback img {
   border-radius: 100px;
-}
-.feed_text {
-  text-align: center;
 }
 .feed_content {
   border-radius: 8px;
   border: 1px solid var(--Darkblue);
   padding: 18px;
 }
+.feed_content p{
+  font-size: 14px;
+}
 .footer{
 display: flex;
 justify-content:center;
 align-items:center;
+flex-wrap: nowrap;
+gap: 10px;
 background-color: var(--Darkgray) ;
 
 }
@@ -192,9 +194,10 @@ background-color: var(--Darkgray) ;
  }
 .footer_left{
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  gap: 16px;
-  padding: 16px;
+  gap: 5px;
+  align-items: center;
   color: var(--ColorWhite);
 }
  .footer_left h1{
@@ -206,6 +209,7 @@ background-color: var(--Darkgray) ;
 .footer_form{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 16px;
   padding: 16px;
 }

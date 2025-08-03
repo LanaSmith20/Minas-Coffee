@@ -15,7 +15,7 @@
       crossorigin="anonymous"
     ></script>
     <title>Minas Coffee</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="aboutus.css" />
     <link rel="stylesheet" href="media.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -27,10 +27,8 @@
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <i class="fa-solid fa-mug-saucer"></i>
-          <a class="navbar-brand" href="#"
-            >Minas<br />
-            Coffee</a
-          >
+        
+      
           <button
             class="navbar-toggler"
             type="button"
@@ -51,22 +49,59 @@
                 <a class="nav-link" href="#cart">shop</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Delivery</a>
+                <a class="nav-link" href="#footer_left">Delivery</a>
               </li>
             </ul>
+         
             <form class="d-flex" role="search">
               <input
                 class="form-control me-2"
                 type="search"
-                placeholder="Search"
-              />
-              <i class="fa-solid fa-magnifying-glass"></i>
+                placeholder="Search">
+
             </form>
+            <span class="cart-items">
             <i class="fa-solid fa-cart-shopping"></i>
+            <p id="cart-quant">0</p>
+            </span>
           </div>
         </div>
-      </nav> 
+      </nav>
     </header>
+    <div class="aboutus">
     <h1>Welcome to Minas Coffee</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A modi commodi neque sequi libero, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate blanditiis quasi nihil? Deleniti magni dolor blanditiis esse, hic voluptatem corrupti rem quibusdam quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam explicabo repellat animi commodi voluptates quos omnis! Fuga quasi atque quisquam, similique soluta ipsa, voluptate fugiat tempore odio autem voluptatem possimus!Quod, libero. Ipsum libero error ex cum?omnis dolores expedita totam deserunt minima tempore! Placeat quas soluta officiis? Quasi in ex iusto ad?Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum cumque earum, maxime nam distinctio minus officia saepe, voluptate temporibus soluta laudantium incidunt debitis, blanditiis ipsa repellat eos et dignissimos iste.</p>
+    <img src="image/photo-1.jpeg" alt="cup of coffee"  height="300px">
+    </div>
+     <footer class="footer">
+      <div class="footer_left" id="footer_left"></a>
+        <h1>Address</h1>
+        <p>Rua das aroeiras 192</p>
+         <p> 35-3453409</p>
+         <p> Social Media:</p>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+      </div> 
+    
+      <!--test-->
+      <form class="footer_form">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+        <textarea 
+          name="message"
+          id="message"
+      
+          placeholder="Message"
+     
+        ></textarea>
+        <button type="submit" id="btn">Submit</button>
+      </form>
+    </footer>
   </body>
 </html>
