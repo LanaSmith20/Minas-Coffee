@@ -6,7 +6,7 @@ addCartButtons.forEach(function(button){
     button.addEventListener('click', function(){
         let itemName = this.getAttribute('data-name');
         carrinho.push(itemName)
-        alert('item add ao carrinho');
+        alert('item add to cart');
         let quantityItems = document.getElementById('cart-quant');
        let currentQuantity = parseInt(quantityItems.innerText);
         quantityItems.innerText = currentQuantity + 1
