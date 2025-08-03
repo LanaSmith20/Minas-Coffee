@@ -84,8 +84,6 @@ d-flex{
 .intro_right img {
   width: 300px;
   border-radius: 100%;
-  
-
 }
  
 .cart-items{
@@ -161,16 +159,22 @@ d-flex{
 .feedback {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  padding: 8px;
+  gap: 8px;
+  padding: 5px;
 }
 .feedback img {
   border-radius: 100px;
 }
 .feed_content {
-  border-radius: 8px;
-  border: 1px solid var(--Darkblue);
-  padding: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.div-icon{
+  display: flex;
+  justify-content: center;
 }
 .feed_content p{
   font-size: 14px;
@@ -196,7 +200,6 @@ background-color: var(--Darkgray) ;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 5px;
   align-items: center;
   color: var(--ColorWhite);
 }
